@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    justify-content: center;
+
+    margin: 0
+}
+
+#container {
+    width: 60%;
+    min-width: 500px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: green;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+li:hover {
+    background: #ddd;
+}
+
+li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+input {
+    margin: 0;
+    border: none;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+#add {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 0 20px 20px 0;
+    border-width: 0;
+    outline: 0;
+}
+
+#add:hover {
+    background-color: #bbb;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+    width: 60%;
+    background-color: green;
+    color: white;
+    min-width: 500px;
+}
+
+.footer-button {
+    height: 35px;
+    width: 200px;
+    background: #d9d9d9;
+    border-radius: 20px;
+    border-width: 0;
+    margin: 5px;
+    color: #555;
+    outline: none;
+}
+
+.footer-button:hover {
+    background-color: #bbb;
+}
+    
