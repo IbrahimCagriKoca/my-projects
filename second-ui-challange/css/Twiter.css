@@ -1,0 +1,527 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+b {
+    font-family: Verdana, Geneva, sans-serif;
+    
+}
+
+#header {
+    width: 100%;
+    height: 50px;
+
+    background-color: #1c2939;
+
+    margin: 0 0 0 0;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#header_content {
+    height: 100%;
+    width: 1270px;
+
+    background-color: #1c2939;
+
+    display: flex;
+    justify-content: center;
+}
+
+.header_button {
+    background-color: #1c2939;
+    border-width: 0;
+}
+
+.header_icon {
+    width: 10%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+#header_home_icon {
+    border-bottom: solid #1da1f2 2px;
+
+}
+
+#home_icon {
+    width: 25px;
+    height: 25px;
+
+    margin-top: 12px;
+}
+
+#search_icon {
+    height: 35px;
+    width: 40px;
+
+    margin-top: 5px;
+}
+
+#bell_icon {
+    height: 25px;
+    width: 30px;
+
+    margin-top: 12px;
+}
+
+#envelope_icon {
+    height: 35px;
+    width: 40px;
+
+    margin-top: 7px;
+}
+
+#header_search {
+    width: 500px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#search {
+    width: 94%;
+    height: 30px;
+
+    background-color: #0f1821;
+
+    border-color: #0f1821;
+    border-radius: 0 20px 20px 0;
+    border-width: 0;
+
+    margin-top: 10px;
+}
+
+#search_button {
+    width: 35px;
+    height: 32px;
+
+    background-color: #0f1821;
+
+    border-color: #0f1821;
+    border-radius: 20px 0 0 20px;
+    border-width: 0;
+
+    margin: 10px 0 0 0;
+}
+
+#search_bar_button {
+    height: 20px;
+    width: 20px;
+
+    margin-top: 2px;
+}
+
+#account {
+    display: flex;
+    flex-direction: row;
+}
+
+#header_profile_photo {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 15px;
+
+    margin: 10px;
+}
+
+#account_name {
+    color: white;
+    margin-right: 10px;
+
+    font-family: "	Arial Verdana";
+}
+
+#account_more {
+    background-color: #1c2939;
+
+    border-width: 0;
+}
+
+#account_show_more {
+    width: 25px;
+    height: 25px;
+
+    background-color: #1c2939;
+}
+
+.account_show_more {
+    width: 25px;
+    height: 25px;
+
+    background-color: #16202a;
+
+    margin-top: 20px;
+}
+
+#main {
+    width: 100%;
+    background-color: #10171f;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#content {
+    width: 40%;
+    height: 1200px;
+
+    background-color: #16202a;
+
+    margin: 20px 20px 20px 0;
+
+
+}
+
+#new_tweet {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    border-bottom: solid #969697 0.5px;
+}
+
+#profile_photo {
+    margin-left: 20px;
+}
+
+.profile_photo {
+    height: 40px;
+    width: 40px;
+
+    border-radius: 20px;
+
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+#whats_going_on {
+    height: 40px;
+    width: 450px;
+
+    background-color: #0f1821;
+
+    border-color: #0f1821;
+    border-radius: 25px;
+    border-width: 0;
+
+    margin-left: 15px;
+    padding: 0 0 0 20px;
+}
+
+#add_new_image {
+    width: 40px;
+    height: 40px;
+
+    margin-left: 10px;
+}
+
+#add_new_gif {
+    width: 40px;
+    height: 45px;
+
+    margin-top: -3px;
+    margin-left: 10px;
+}
+
+#add_new_any_think {
+    width: 45px;
+    height: 50px;
+
+    margin-top: -6px;
+    margin-left: 10px;
+}
+
+.profile {
+    width: 55px;
+    height: 55px;
+
+    margin-left: 3px;
+
+    border-radius: 30px;
+}
+
+.tweets {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+
+    display: flex;
+    flex-direction: row;
+
+    border-bottom: solid #969697 0.5px;
+}
+
+.tweet_content {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 15px;
+}
+
+.account_stats {
+    width: 620px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 20px;
+    margin-top: -18px;
+}
+
+.account_name {
+    color: white;
+
+    font-size: 20px;
+
+    margin-left: -10px;
+}
+
+.stats {
+    color: darkgray;
+
+    margin-left: 10px;
+}
+
+#tweet_1 {
+    color: white;
+
+    font-size: 16px;
+
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-top: -10px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+
+    color: #898a8b;
+}
+
+.comment_icon {
+    width: 20px;
+    height: 20px;
+
+    margin: 20px 15px 20px 20px;
+}
+
+.numbers {
+    margin-top: 18px;
+    margin-right: 40px;
+
+    font-size: 18px;
+}
+
+.retweet_icon {
+    width: 20px;
+    height: 15px;
+
+    margin: 22px 15px 20px 20px;
+}
+
+.upload_icon {
+    width: 22px;
+    height: 22px;
+
+    margin: 20px 15px 20px 30px;
+
+}
+
+.like_icon {
+    width: 25px;
+    height: 25px;
+
+    margin: 17px 15px 20px 20px;
+}
+
+#tweet_2 {
+    color: white;
+
+    margin-left: 20px;
+    margin-top: -30px;
+}
+
+#retweet {
+    width: 620px;
+
+    border: solid #969697 0.5px;
+    border-radius: 15px;
+}
+
+#retweet_text {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#retweet_stats {
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+#images {
+    display: flex;
+    flex-direction: row;
+}
+
+#left_image {
+    width: 310px;
+    height: 500px;
+
+    border-radius: 0 0 0 15px;
+}
+
+#right_image {
+    width: 310px;
+    height: 500px;
+
+    margin-right: 1px;
+
+    border-radius: 0 0 15px 0;
+}
+
+#right_side {
+    width: 20%;
+    height: 900px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #10171f;
+
+    margin-top: 20px;
+}
+
+#right_top {
+    width: 100%;
+    height: 350px;
+
+    background-color: #16202a;
+
+    margin-bottom: 20px;
+}
+
+.who_to {
+    border-bottom: solid #969697 1px;
+}
+
+.who_to_follow {
+    color: white;
+
+    font-size: 25px;
+
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.recommended {
+    display: flex;
+    justify-content: space-between;
+
+    width: 96%;
+
+    border-bottom: solid #969697 1px;
+
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+.recommended_person {
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+.follow_button {
+    width: 120px;
+    height: 35px;
+
+    background-color: #16202a;
+    color: #1da1f2;
+
+    margin-top: 2px;
+    margin-right: 15px;
+
+    border-radius: 20px;
+    border: solid #1da1f2 2px;
+}
+
+.show_more_account {
+    color: #1da1f2;
+    font-size: 20px;
+
+    margin-left: 20px;
+}
+
+.for_follow_button {
+    display: flex;
+    flex-direction: row;
+}
+
+#right_middle {
+    width: 100%;
+    height: 530px;
+
+    background-color: #16202a;
+
+    margin-bottom: 20px;
+}
+
+.trends {
+    border-bottom: solid #969697 1px;
+}
+
+.trend_name {
+    color: white;
+    font-size: 20px;
+}
+
+.tweets_for_this_trend {
+    color: darkgray;
+
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#right_bottom {
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: #10171f;
+    color: #969697;
+
+    margin-left: 5px;
+}
+
+.right_footer {
+    margin: 5px 8px;
+}
+
+#new_tweet_button {
+    height: 30px;
+    width: 90px;
+
+    margin-left: 5px;
+    margin-top: 5px;
+
+    background-color: #16202a;
+    color: #1da1f2;
+    border : solid #1da1f2  2px ;
+    border-radius: 5px;
+}
