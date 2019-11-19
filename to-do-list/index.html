@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ToDoList</title>
+
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="CSS/main.css">
+<div id="container">
+    <header>
+        <h2 style="margin:5px">To Do List</h2>
+        <input type="text" id="input" placeholder="What to do?">
+        <button id="add" onclick="newElement()">Add</button>
+    </header>
+    <ul id="list">
+        <li>Learn Java</li>
+    </ul>
+    <footer>
+        <button onclick="clearAll()" id="clear-all" class="footer-button">Clear All</button>
+        <button onclick="hideCompleted()" id="hide-completed" class="footer-button">Hide Completed</button>
+        <button onclick="selectAll()" id="select-all" class="footer-button">Select All</button>
+        <button onclick="deleteCompleted()" id="delete-completed" class="footer-button">Delete Completed Jobs</button>
+        <!--<button onclick="saveToCookie()" id="save-to-cookie" class="footer-button">Save</button>-->
+    </footer>
+</div>
+<script src="JS/main.js"></script>
+</body>
+</html>
