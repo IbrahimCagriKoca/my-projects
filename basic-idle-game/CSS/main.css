@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 5px;
+    background-color: darkred;
+    width: 50%;
+    min-width: 500px;
+    height: 1000px;
+}
+
+.idle-coin {
+    width: 500px;
+    height: 45px;
+    margin: 6px;
+    outline: none;
+    box-shadow: 0 6px #999;
+
+    background-color: honeydew;
+    border-radius: 15px;
+    border-width: 0;
+    animation: infinite;
+
+
+}
+
+.idle-coin:active {
+    transform: translateY(3px);
+    box-shadow: 0 3px #666;
+    animation: infinite;
+}
+
+#title {
+    margin: 10px;
+    font-size: 28px;
+
+    color: white;
+}
+
+#coins {
+    font-size: 16px;
+    margin: 10px;
+
+    color: white;
+}
+
+#coinsPS {
+    font-size: 16px;
+    margin: 10px;
+
+    color: white;
+}
+
+.grower-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.weed-text {
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+#multiple {
+    width: 50px;
+}
+
+#header {
+    display: flex;
+}
