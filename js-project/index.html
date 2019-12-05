@@ -11,12 +11,12 @@
 <div id="container">
     <div id="left-div" class="main-divs">
         <div class="header" id="left-header">
-            <i onclick="leftClose()" id="left-close" class="fas fa-times"></i>
-            <span>
-				<i onclick="expandLeft()" id="left-arrow" class="fas fa-caret-right"></i>
-				<i id="left-square" class="far fa-square"></i>					
-				<i onclick="moveLeft()" class="far fa-moon"></i>
-			</span>
+            <button onclick="leftClose()" id="left-close" class="fas fa-times"></button>
+            <div id="left-span">
+				<button onclick="expandLeft()" id="left-arrow" class="fas fa-caret-right"></button>
+				<button id="left-square" class="far fa-square"></button>
+				<button onclick="moveLeft()" id="left-moon" class="far fa-moon"></button>
+			</div>
 
         </div>
         <span id="left-text" class="article">Left</span>
@@ -27,10 +27,10 @@
             <div class="header" id="bottom-header">
                 <span></span>
                 <span>
-					<i onclick="moveBottom()" id="bottom-moon" class="far fa-moon"></i>
-					<i onclick="expandBottom()" id="bottom-arrow" class="fas fa-sort-up"></i>
-					<i id="bottom-square" class="far fa-square"></i>
-					<i onclick="bottomClose()" id="bottom-close" class="fas fa-times"></i>
+					<button onclick="moveBottom()" id="bottom-moon" class="far fa-moon"></button>
+					<button onclick="expandBottom()" id="bottom-arrow" class="fas fa-sort-up"></button>
+                    <button id="bottom-square" class="far fa-square"></button>
+					<button onclick="bottomClose()" id="bottom-close" class="fas fa-times"></button>
 				</span>
             </div>
             <span id="bottom-text" class="article">Bottom</span>
@@ -40,12 +40,12 @@
     <div id="right-div" class="main-divs">
         <div class="header" id="right-header">
 				
-			<span>
-				<i onclick="moveRight()" class="far fa-moon" id="right-moon"></i>
-				<i class="far fa-square" id="right-square"></i>
-				<i onclick="expandRight()" id="right-arrow" class="fas fa-caret-left"></i>
-			</span>
-            <i onclick="rightClose()" id="right-close" class="fas fa-times"></i>
+			<div id="right-span">
+				<button onclick="moveRight()" class="far fa-moon" id="right-moon"></button>
+				<button class="far fa-square" id="right-square"></button>
+				<button onclick="expandRight()" id="right-arrow" class="fas fa-caret-left"></button>
+			</div>
+            <button onclick="rightClose()" id="right-close" class="fas fa-times"></button>
         </div>
         <span id="right-text" class="article">Right</span>
     </div>

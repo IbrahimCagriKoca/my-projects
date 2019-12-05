@@ -15,9 +15,10 @@ body {
 .main-divs {
     width: 33%;
     height: 900px;
-
-    background-color: white;
-    border: black solid 2px;
+    color: #01d28e;
+    background-color: #f6f5f5;
+    border: #01d28e solid 2px;
+    font-size: 24px;
 
     z-index: 0;
 }
@@ -42,8 +43,9 @@ body {
 
 #mid-span {
     height: 600px;
-    border: black solid;
+    border: #01d28e solid;
     border-width: 0 0 2px 0;
+    color: #01d28e;
 }
 
 .header {
@@ -51,8 +53,10 @@ body {
     justify-content: space-between;
 
     height: 30px;
-    border: black solid;
+    border: #01d28e solid;
     border-width: 0 0 2px 0;
+
+    background-color: #01d28e;
 }
 
 #mid-div {
@@ -63,4 +67,19 @@ body {
 
 i {
     margin: 6px;
+}
+.far {
+    background-color: #01d28e;
+    color: white;
+    border-width: 0;
+    height: 30px;
+    outline:none;
+}
+
+.fas {
+    background-color: #01d28e;
+    color: white;
+    border-width: 0;
+    height: 30px;
+    outline:none;
 }
