@@ -38,6 +38,7 @@ function expandLeft() {
     let leftSpan = document.getElementById("left-span");
     let rightArrow = document.getElementById("left-arrow");
     let leftArrow = document.getElementById("left-arrow");
+    let rightSpan = document.getElementById("right-span");
     leftSpan.appendChild(newArrow);
     newArrow.classList.add("fas");
     newArrow.classList.add("fa-caret-left");
@@ -50,8 +51,10 @@ function expandLeft() {
         } else {
             rightDiv.style.display = "block";
             leftDiv.style.width = "67%";
-            if (newArrow.style.display === "none") {
-                newArrow.style.display = "inline-block";
+            leftArrow.style.display = "inline-block";
+            console.log(leftSpan.childElementCount);
+            if (rightSpan.childElementCount > 3) {
+                rightSpan.removeChild(rightSpan.childNodes[6]);
             }
             rightDiv.style.width = "33%";
         }
@@ -68,17 +71,18 @@ function expandLeft() {
         leftSpan.insertBefore(newArrow, leftSpan.childNodes[0]);
         newArrow.classList.add("fas");
         newArrow.classList.add("fa-caret-left");
-        if (newArrow.style.display === "none") {
-            newArrow.style.display = "inline-block";
-        }
+        newArrow.style.display = "inline-block";
     } else {
         middleDiv.style.display = "none";
         leftDiv.style.width = "67%";
         leftSpan.insertBefore(newArrow, leftSpan.childNodes[0]);
-        newArrow.classList.add("fas");
-        newArrow.classList.add("fa-caret-left");
+
         if (newArrow.style.display === "none") {
+            newArrow.classList.add("fas");
+            newArrow.classList.add("fa-caret-left");
             newArrow.style.display = "inline-block";
+        } else {
+            newArrow.style.display = "none";
         }
     }
 }
@@ -91,6 +95,7 @@ function expandRight() {
     let rightSpan = document.getElementById("right-span");
     let leftArrow = document.getElementById("left-arrow");
     let rightArrow = document.getElementById("right-arrow");
+    let leftSpan = document.getElementById("left-span");
     // rightSpan.appendChild(newArrow);
     newArrow.onclick = () => {
         if (rightDiv.style.width === "67%") {
@@ -101,24 +106,31 @@ function expandRight() {
             rightDiv.style.width = "67%";
             leftDiv.style.width = "33%";
             leftDiv.style.display = "block";
+            console.log(newArrow.style.display);
             rightArrow.style.display = "inline-block";
+            console.log(leftSpan.childElementCount);
+            if (leftSpan.childElementCount > 3) {
+                leftSpan.removeChild(leftSpan.childNodes[0]);
+            }
         }
     };
     if (rightDiv.style.width === "67%") {
         leftDiv.style.display = "none";
         rightDiv.style.width = "100%";
         rightArrow.style.display = "none";
-        if (newArrow.style.display === "none") {
-            newArrow.style.display = "inline-block";
-        }
+
+
     } else if (leftDiv.style.width === "67%") {
         leftDiv.style.display = "none";
         rightDiv.style.width = "100%";
         rightArrow.style.display = "none";
-        rightSpan.insertBefore(newArrow, rightSpan.childNodes[6]);
-        newArrow.classList.add("fas");
-        newArrow.classList.add("fa-caret-right");
         newArrow.style.display = "inline-block";
+        if (newArrow.className !== "fas fa-caret-right") {
+            rightSpan.insertBefore(newArrow, rightSpan.childNodes[6]);
+            newArrow.classList.add("fas");
+            newArrow.classList.add("fa-caret-right");
+            newArrow.style.display = "inline-block";
+        }
     } else {
         middleDiv.style.display = "none";
         rightDiv.style.width = "67%";
