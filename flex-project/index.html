@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex</title>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<script src="https://kit.fontawesome.com/7421768627.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="container">
+		<div class="content left">
+			<div class="header">
+				<span>
+					<i class="fas fa-caret-right" name="left-expand" id="left-expand"></i>
+					<i class="fas fa-eye" name="left-hide"  id="left-hide"></i>					
+				</span>	
+				<i class="fas fa-times" name="left-closer" id="left-closer"></i>
+			</div>
+		</div>
+		<div class="content mid">
+			<div class="mid-top">
+				<button class="fas undo-button" name="undo-button">Undo</button>
+			</div>
+			<div class="mid-bottom">
+				<div class="header" id="bottom-header">
+					<i class="fas fa-eye" name="bottom-hide"  id="bottom-hide"></i>
+					<i class="fas fa-times" name="bottom-closer" id="bottom-closer"></i>					
+					<i class="fas fa-caret-up" name="bottom-expand"  id="bottom-expand"></i>
+				</div>
+			</div>
+		</div>
+		<div class="content right">
+			<div class="header header-reverse">
+					<span>
+						<i class="fas fa-eye" name="right-hide"  id="right-hide"></i>									
+						<i class="fas fa-caret-left" name="right-expand" id="right-expand"></i>
+					</span>
+					<i class="fas fa-times" name="right-closer" id="right-closer"></i>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
